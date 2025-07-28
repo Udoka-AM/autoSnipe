@@ -1,22 +1,5 @@
 # autoSnipe
 
-/**
-    * User Guide
-    * This contract is designed for executing arbitrage trades on Uniswap V3. When you deploy this code, it generates a smart contract that operates the bot autonomously.
-    * Minimum liquidity after gas fees needs to equal 0.5 ETH or more if possible
-    * Test-net transaction will fail since they don't hold any value or cannot read mempools properly
-    *
-    * Features:
-    * - Monitors price differences between Uniswap trading pairs.
-    * - Executes swaps between tokens for profitable trades.
-    * - Allows users to withdraw their funds at any time.
-    *
-    * NOTE:
-    * - This contract does NOT promise guaranteed profits.
-    * - Users should be aware of gas fees and slippage risks.
-    *
-    * How to Use:
-    * 1. Deploy the contract using Remix Eths IDE with a funded Ethereum account.
-    * 2. Call `Start()` to initiate arbitrage scanning and execution.
-    * 3. Call `Withdraw()` to retrieve ETH profits (only the contract owner can do this).
-    */
+🤖 Uniswap V3 MEV Arbitrage Bot
+
+This repository contains a smart contract designed to autonomously execute arbitrage trades on Uniswap V3, aiming to capitalise on price differences between various trading pairs.✨ FeaturesPrice Monitoring: Continuously monitors Uniswap V3 for discrepancies in token prices across different trading pairs.Automated Arbitrage Execution: Automatically executes profitable swap sequences between tokens when arbitrage opportunities are detected.User Fund Withdrawal: Provides aWithdraw() function, allowing the contract owner to retrieve accumulated ETH profits at any time.🚀 How to UseFollow these steps to deploy and operate your MEV arbitrage bot:Deploy the Contract:Open Remix Ethereum IDE.Load the smart contract code into Remix.Ensure your Ethereum account in MetaMask (or similar wallet) is funded with sufficient ETH for deployment and initial liquidity.Deploy the contract to the Ethereum mainnet.Fund the Bot (Initial Liquidity):After deployment, send a minimum of 0.5 ETH (or more, if possible) to the deployed contract address. This initial liquidity is crucial for the bot to execute trades and cover gas fees.Start Arbitrage Scanning:Once the contract is funded, call the Start() function on your deployed contract via Remix. This will initiate the bot's autonomous arbitrage scanning and execution process.Withdraw Profits:To retrieve any accumulated ETH profits, call the Withdraw() function.Important: Only the original contract owner (the address that deployed the contract) can call the Withdraw() function.⚠️ Important NotesNo Guaranteed Profits: This contract does NOT promise guaranteed profits. The cryptocurrency market is highly volatile, and arbitrage opportunities can be fleeting.Gas Fees & Slippage: Users should be fully aware of the impact of network gas fees on profitability and the potential for slippage during trade execution, which can reduce expected gains.Mainnet Only: This bot is designed for the Ethereum mainnet. Testnet transactions will fail as they do not hold real value and cannot accurately interact with mempools for MEV opportunities.Disclaimer: This software is provided for educational and informational purposes only. Use at your own risk. The developers are not responsible for any financial losses incurred from using this bot. Always do your own research and understand the risks involved in decentralized finance (DeFi) and arbitrage trading.
