@@ -14,7 +14,7 @@ An autonomous smart contract-based arbitrage bot for Uniswap V3 that monitors pr
 - Funded Ethereum mainnet account
 - Minimum 0.5 ETH for initial liquidity (after accounting for gas fees)
 - Access to Remix IDE or similar deployment environment
-- Basic understanding of smart contract interactions
+- Basic understanding of smart contract interactions 
 
 ## 🛠️ Installation & Deployment
 
